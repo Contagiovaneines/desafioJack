@@ -1,0 +1,14 @@
+appName: myhelmapp
+
+namespace: default
+
+configmap: 
+  name: helpmappconfigmapv1.1
+  data:
+    CUSTOM_HEADER: "A aplicação foi implantada com o Helm"  #"This app was deployed with helm"
+
+
+
+image:
+  name: devopsjourney1/mywebapp
+  tag: latest  

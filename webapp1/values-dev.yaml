@@ -1,0 +1,10 @@
+namespace: dev
+
+configmap: 
+   data:
+    CUSTOM_HEADER: "Bem-vindo ao ambiente de desenvolvimento"  #"Welcome to Dev"
+
+
+
+
+  

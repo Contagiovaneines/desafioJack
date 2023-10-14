@@ -1,0 +1,4 @@
+# Obtendo o nome do serviço
+$servicename = kubectl get service -l "app={{ .Values.appName }}" -o jsonpath="{.items[0].metadata.name}"
+# Encaminhando a porta
+kubectl port-forward service/{{ .Values.appName }} 8888:80 -n {{ .Values.namespace }}
